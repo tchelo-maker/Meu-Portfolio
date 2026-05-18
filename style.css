@@ -1,0 +1,246 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/pexels-peaky-29445973.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    width: 99%;
+    height: auto;
+    
+}
+
+#bloco{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; 
+
+    box-shadow: 0px 0px 10px 5px rgba(7, 7, 7, 0.555);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.452);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+   
+}
+
+#eu{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-top:  80px;
+}
+
+#links{
+    position: sticky;
+    top: 0;
+    width:1220px;
+    height: 27px;
+    align-items: center;
+    background-color:  rgba(247, 236, 236, 0.089);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+    margin: 4px;
+    margin-left:60px;
+    margin-top: 10px;
+    display: flex;
+    gap: 3px;
+    z-index: 10;
+    
+    align-items: center;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px); 
+}
+
+#imglink{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 3px;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#imglink:hover{
+    transform: scale(1.50);
+}
+
+#iconlink{
+    width: 25px;
+    margin-left: 3px;
+}
+
+
+#iconhub{
+    margin-top: 3px;
+    width: 25px;
+    margin-left: 3px;
+    margin-right: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    align-items: center;
+}
+
+#iconhub:hover{
+    transform: scale(1.50);
+}
+
+#iconmai{
+    margin-top: 3px;
+    width: 25px;
+    margin-right: 7px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#iconmai:hover{
+    transform: scale(1.50);
+}
+
+#downc{
+    margin-top:  3px;
+    margin-right: 110px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#downc:hover{
+    transform: scale(1.50);
+}
+
+#historico{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    margin-top: 55px;
+    width: 1000px;
+    height: auto;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.front{
+  
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(58, 57, 57, 0.26);
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease ;
+    cursor: default;
+    border: 1px solid rgba(182, 176, 176, 0.589);
+    margin-left: 260px;
+}
+
+.front:hover{
+    border-color: white;
+    box-shadow: 0 0 20px 5px rgba(83, 82, 82, 0.541);
+}
+
+
+
+.tecnologias{
+    margin-top: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tecno{
+    width: 50px;
+    display: flex;
+    margin-left: 90px;
+    gap: 15px;
+}
+
+.itemz:hover{
+     transform: scale(1.05);
+}
+
+.itemz{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.pag-resposiv{
+    display: flex;
+    margin-left: 80px;
+    border-radius: 20px;
+    border: 1px solid rgba(182, 176, 176, 0.589);
+    background-color: rgba(66, 64, 64, 0.24);
+    width:600px ;
+    height: 27px;
+}
+
+
+.pag-resposiv a {
+    margin-left: 80px;
+    margin-top: 3px;
+    text-decoration: none;
+    color : white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#efeito-pag{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#efeito-pag:hover{
+    transform: scale(1.50);
+}
+
+#texto-projeto{
+    font : normal 30pt arial ;
+}
+
+#projetos{
+    display: flex;
+    gap: 40px;
+    margin-left: 23px;
+}
+
+#movix{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    height: auto;
+    background-color: rgba(0,0,0,0.37);
+    border: 1px solid rgba(182, 176, 176, 0.589);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#movix:hover{
+    transform: scale(1.05);
+}
+
+.imgmovix{
+    width: 80%;
+    height: auto;
+}
+
+
+
+
+#calculator{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.37);
+    border: 1px solid rgba(182, 176, 176, 0.589);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#calculator:hover{
+    transform: scale(1.05);
+}
