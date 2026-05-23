@@ -1,21 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
+
     background-image: url(img/pexels-peaky-29445973.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+
     color: white;
-    width: 99%;
-    height: auto;
-    
+
+    background-attachment: fixed;
+   
+    overflow-x: hidden;
+
+    min-height: 100vh;
+}
+
+
+@media (max-width: 768px){
+    body{
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 10px;
+        word-wrap: break-word;
+    }
+    #projetos{
+        flex-direction: column;
+    }
+
+    .pag-resposiv{
+        width: 100%;
+        max-width: 200px;
+        margin-top: auto;
+        height: auto;
+        max-height:200px;
+        left: 10px;
+        flex-direction: column;
+        text-align: right;
+        font-size: medium;
+        
+       
+    }
+
+    .pag-resposiv a{
+        width: 100%;
+        margin-top: auto;
+        max-width: 100px;
+        height: auto;
+        flex-direction: column;
+        text-align: right;
+    }
 }
 
 #bloco{
-    width: 100%;
+    width: 100% ;
+    max-width: 1599px;
+
+    margin: auto;
     height: auto;
     min-height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -40,16 +91,14 @@ body{
 #links{
     position: sticky;
     top: 0;
-    width:1220px;
+    width:100%;
     height: 27px;
     align-items: center;
     background-color:  rgba(247, 236, 236, 0.089);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.37);
-    margin: 4px;
-    margin-left:60px;
-    margin-top: 10px;
+    margin: 0;
     display: flex;
     gap: 3px;
     z-index: 10;
@@ -120,24 +169,27 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
     margin-top: 55px;
-    width: 1000px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1000px;
     height: auto;
     line-height: 1.6;
     font-weight: 400;
 }
 
 .front{
-  
+    
     align-items: center;
     justify-content: center;
     background-color: rgba(58, 57, 57, 0.26);
-    width: 50%;
+    width: 100%;
+    max-width: 700px;
     height: auto;
     overflow: hidden;
     transition: box-shadow 0.3s ease, border-color 0.3s ease ;
     cursor: default;
     border: 1px solid rgba(182, 176, 176, 0.589);
-    margin-left: 260px;
+    margin: 40px auto;
 }
 
 .front:hover{
@@ -153,9 +205,12 @@ body{
 }
 
 #tecno{
-    width: 50px;
     display: flex;
-    margin-left: 90px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    margin-top: 20px;
     gap: 15px;
 }
 
@@ -164,6 +219,8 @@ body{
 }
 
 .itemz{
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -171,18 +228,24 @@ body{
 
 .pag-resposiv{
     display: flex;
-    margin-left: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 11px;
+    text-align: center;
+
+    margin:auto;
     border-radius: 20px;
     border: 1px solid rgba(182, 176, 176, 0.589);
     background-color: rgba(66, 64, 64, 0.24);
-    width:600px ;
-    height: 27px;
+    width:100%;
+    max-width: 600px;
+    height: auto;
 }
 
 
 .pag-resposiv a {
-    margin-left: 80px;
-    margin-top: 3px;
+    margin: auto ;
     text-decoration: none;
     color : white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -191,6 +254,7 @@ body{
 #efeito-pag{
     transition: 0.3s;
     cursor: pointer;
+    
 }
 
 #efeito-pag:hover{
@@ -204,13 +268,13 @@ body{
 #projetos{
     display: flex;
     gap: 40px;
-    margin-left: 23px;
 }
 
 #movix{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
     height: auto;
     background-color: rgba(0,0,0,0.37);
     border: 1px solid rgba(182, 176, 176, 0.589);
@@ -232,8 +296,10 @@ body{
 
 
 #calculator{
-    width: 500px;
-    height: 300px;
+
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     background-color: rgba(0,0,0,0.37);
     border: 1px solid rgba(182, 176, 176, 0.589);
     border-radius: 2px;
