@@ -10,6 +10,9 @@
 body{
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-image: url(img/pexels-peaky-29445973.jpg);
     background-size: cover;
@@ -21,12 +24,12 @@ body{
     background-attachment: fixed;
    
     overflow-x: hidden;
-
+    width: 100%;
     min-height: 100vh;
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 600px){
     body{
         background-size: auto 100%;
         background-position: center;
@@ -40,35 +43,35 @@ body{
 
     .pag-resposiv{
         width: 100%;
-        max-width: 200px;
+        max-width: 100px;
         margin-top: auto;
         height: auto;
         max-height:200px;
-        left: 10px;
         flex-direction: column;
-        text-align: right;
-        font-size: medium;
-        
-       
+        font-size: medium;     
     }
 
     .pag-resposiv a{
+        justify-content: right;
         width: 100%;
         margin-top: auto;
-        max-width: 100px;
-        height: auto;
+        max-width: 80px;
         flex-direction: column;
         text-align: right;
+    }
+
+    #downc{
+        margin-right: 100px;
     }
 }
 
 #bloco{
     width: 100% ;
-    max-width: 1599px;
+    max-width: ;
 
-    margin: auto;
-    height: auto;
-    min-height: 100vh;
+    margin: 0 auto;
+    height: 100%;
+    max-height: 5000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center; 
 
@@ -94,16 +97,17 @@ body{
     width:100%;
     height: 27px;
     align-items: center;
+    justify-content: center;
+    display: flex;
     background-color:  rgba(247, 236, 236, 0.089);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.37);
     margin: 0;
-    display: flex;
     gap: 3px;
     z-index: 10;
     
-    align-items: center;
+    
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px); 
 }
@@ -124,15 +128,13 @@ body{
 
 #iconlink{
     width: 25px;
-    margin-left: 3px;
 }
 
 
 #iconhub{
     margin-top: 3px;
     width: 25px;
-    margin-left: 3px;
-    margin-right: 5px;
+    gap: 4px;
     transition: 0.3s;
     cursor: pointer;
     align-items: center;
@@ -145,7 +147,7 @@ body{
 #iconmai{
     margin-top: 3px;
     width: 25px;
-    margin-right: 7px;
+    gap: 1px;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -156,7 +158,7 @@ body{
 
 #downc{
     margin-top:  3px;
-    margin-right: 110px;
+    
     transition: 0.3s;
     cursor: pointer;
 }
@@ -165,84 +167,22 @@ body{
     transform: scale(1.50);
 }
 
-#historico{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: auto;
-    margin-top: 55px;
-    padding: 1rem;
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    line-height: 1.6;
-    font-weight: 400;
-}
-
-.front{
-    
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(58, 57, 57, 0.26);
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease, border-color 0.3s ease ;
-    cursor: default;
-    border: 1px solid rgba(182, 176, 176, 0.589);
-    margin: 40px auto;
-}
-
-.front:hover{
-    border-color: white;
-    box-shadow: 0 0 20px 5px rgba(83, 82, 82, 0.541);
-}
-
-
-
-.tecnologias{
-    margin-top: 150px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#tecno{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-    margin-top: 20px;
-    gap: 15px;
-}
-
-.itemz:hover{
-     transform: scale(1.05);
-}
-
-.itemz{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
 .pag-resposiv{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 11px;
     text-align: center;
+    flex-wrap: wrap;
+    
 
     margin:auto;
     border-radius: 20px;
     border: 1px solid rgba(182, 176, 176, 0.589);
     background-color: rgba(66, 64, 64, 0.24);
     width:100%;
-    max-width: 600px;
+    max-width: 700  px;
     height: auto;
 }
-
 
 .pag-resposiv a {
     margin: auto ;
@@ -261,11 +201,88 @@ body{
     transform: scale(1.50);
 }
 
+#historico{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    margin-top: 55px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.front{
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(58, 57, 57, 0.26);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease ;
+    cursor: default;
+    border: 1px solid rgba(182, 176, 176, 0.589);
+    margin: 4px auto;
+}
+
+.front:hover{
+    border-color: white;
+    box-shadow: 0 0 20px 5px rgba(83, 82, 82, 0.541);
+}
+
+
+
+.tecnologias{
+    margin-top: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.back-tecno{
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(58, 57, 57, 0.26);
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease ;
+    cursor: default;
+    border: 1px solid rgba(182, 176, 176, 0.589);
+    margin: 40px auto;  
+}
+
+.back-tecno:hover{
+    border-color: white;
+    box-shadow: 0 0 20px 5px rgba(83, 82, 82, 0.541);
+}
+
+.itemz:hover{
+     transform: scale(1.05);
+}
+
+.itemz{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+
+
 #texto-projeto{
     font : normal 30pt arial ;
 }
 
 #projetos{
+    
+    justify-content: center;
     display: flex;
     gap: 40px;
 }
@@ -291,9 +308,6 @@ body{
     width: 80%;
     height: auto;
 }
-
-
-
 
 #calculator{
 
